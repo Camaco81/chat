@@ -1,0 +1,14 @@
+.btn-blue{
+	background-color: darkcyan;
+	color: white;
+}
+.btn-blue:hover{
+	background-color: rgb(0, 111,111);
+}
+
+.text-blue{
+	color: cadetblue;
+}
+a{
+	color: cadetblue;
+}
