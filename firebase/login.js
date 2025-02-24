@@ -1,6 +1,6 @@
 import { signInWithEmailAndPassword, 
     onAuthStateChanged,
-   getAuth,} from "https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js";
+   getAuth} from "https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js";
 import { app } from "./credentials.js";
 
 const auth= getAuth(app);

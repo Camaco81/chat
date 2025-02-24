@@ -5,3 +5,17 @@
 a{
 	cursor: pointer;
 }
+
+#chat-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#chat-list div {
+    padding: 5px;
+    cursor: pointer; /* Indica que se puede hacer clic */
+}
+
+#chat-list div:hover {
+    background-color: #f0f0f0; /* Resalta al pasar el mouse */
+}
