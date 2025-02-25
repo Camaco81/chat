@@ -6,10 +6,7 @@ a{
 	cursor: pointer;
 }
 
-#chat-list {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
+
 
 #chat-list div {
     padding: 5px;
@@ -17,5 +14,17 @@ a{
 }
 
 #chat-list div:hover {
-    background-color: #f0f0f0; /* Resalta al pasar el mouse */
+    background-color:darkcyan; /* Resalta al pasar el mouse */
+}
+
+.btn-blue{
+    box-shadow: 4px 4px 4px gray;
+    border: none !important;
+
+}
+
+#chat-list div{
+    background-color: lightblue;
+    margin-bottom: 10px;
+    border-radius: 8px;
 }

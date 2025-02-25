@@ -71,51 +71,6 @@ async function createChat(otherUserId) {
 
 
 
-// onAuthStateChanged(auth, (user) => {
-//     if (user) {
-//         // ... (código anterior)
-
-//         const chatsRef = collection(db, 'chats');
-//         const q = query(chatsRef, where('participants', 'array-contains', user.uid));
-
-//         // Objeto para almacenar el último mensaje de cada chat
-//         const lastMessages = {};
-
-//         onSnapshot(q, (snapshot) => {
-//             const chatList = document.getElementById('chat-list');
-//             chatList.innerHTML = '';
-
-//             snapshot.forEach((doc) => {
-//                 const chat = doc.data();
-//                 const chatId = doc.id;
-
-//                 // Obtener el último mensaje del chat
-//                 getLastMessage(chatId)
-//                     .then(lastMessage => {
-//                         // Si hay un último mensaje, mostrar el chat en la lista
-//                         if (lastMessage) {
-//                             // Evitar mostrar chats duplicados
-//                             if (!lastMessages[chatId]) {
-//                                 lastMessages[chatId] = lastMessage;
-
-//                                 const chatElement = document.createElement('div');
-//                                 chatElement.textContent = lastMessage.text; // Mostrar el último mensaje
-
-//                                 chatElement.addEventListener('click', () => {
-//                                     window.location.href = `chat.html?chatId=${chatId}`;
-//                                 });
-
-//                                 chatList.appendChild(chatElement);
-//                             }
-//                         }
-//                     });
-//             });
-//         });
-//     } else {
-//         // ... (código anterior)
-//     }
-// });
-// ... (código anterior)
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
@@ -150,7 +105,7 @@ onAuthStateChanged(auth, (user) => {
                                         const chatElement = document.createElement('div');
                                         // Mostrar el nombre del otro usuario y el último mensaje
                                         chatElement.innerHTML = `
-                                            <strong>${otherUser.displayName}</strong><br>
+                                         <strong>${otherUser.displayName}</strong><br>
                                             ${lastMessage.text}
                                         `;
 
